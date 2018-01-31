@@ -78,3 +78,19 @@ module.exports = function(Product) {
   });
 
 };
+
+
+// TERMINAL (protecting all the methods):
+// lb acl
+// ? Select the model to apply the ACL entry to: Product
+// ? Select the ACL scope: All methods and properties
+// ? Select the access type: All (match all types)
+// ? Select the role Any unauthenticated user
+// ? Select the permission to apply Explicitly deny access
+
+// lb acl (protecting all methods except the 'get products' one);
+// ? Select the model to apply the ACL entry to: Product
+// ? Select the ACL scope: A single method
+// ? Enter the method name find
+// ? Select the role Any unauthenticated user
+// ? Select the permission to apply Explicitly grant access
