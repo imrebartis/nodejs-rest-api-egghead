@@ -1,16 +1,21 @@
 {
   "ids": {
-    "User": 1,
-    "AccessToken": 1,
+    "User": 2,
+    "AccessToken": 3,
     "ACL": 1,
     "RoleMapping": 1,
     "Role": 1,
     "Product": 4,
-    "Category": 3
+    "Category": 6
   },
   "models": {
-    "User": {},
-    "AccessToken": {},
+    "User": {
+      "1": "{\"password\":\"$2a$10$313erqQ01L71WJwhCq6wWeUv.UdPDVSJMrSTsmUtvcdgPIiW0edeO\",\"email\":\"admin@example.com\",\"id\":1}"
+    },
+    "AccessToken": {
+      "53qE7oa7TfO3bYP74Tbgz4TWzw6uM600JXE5ayc79q58P7hFpSuZizLZeDArQLU0": "{\"id\":\"53qE7oa7TfO3bYP74Tbgz4TWzw6uM600JXE5ayc79q58P7hFpSuZizLZeDArQLU0\",\"ttl\":1209600,\"created\":\"2018-01-31T11:22:44.645Z\",\"userId\":1}",
+      "zk3t9l": "{\"id\":\"zk3t9l\",\"userId\":1}"
+    },
     "ACL": {},
     "RoleMapping": {},
     "Role": {},
@@ -21,7 +26,10 @@
     },
     "Category": {
       "1": "{\"name\":\"drinks\",\"id\":1}",
-      "2": "{\"name\":\"food\",\"id\":2}"
+      "2": "{\"name\":\"food\",\"id\":2}",
+      "3": "{\"name\":\"test\",\"id\":3}",
+      "4": "{\"name\":\"testy\",\"id\":4}",
+      "5": "{\"name\":\"testicity\",\"id\":5}"
     }
   }
 }
