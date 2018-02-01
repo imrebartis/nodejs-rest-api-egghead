@@ -26,7 +26,13 @@ module.exports = function(app, cb) {
   // process.nextTick(cb); // Remove if you pass `cb` to an async function yourself
 };
 
-// Having our API create an access token on start (terminal):
-// lb boot-script
-// ? Enter the script name (without `.js`): create-access-token
-// ? What type of boot script do you want to generate? async
+// Filtering with params keys in Postman http://localhost:3000/api/products/
+// filter[include]:category
+// filter[order]:price DESC
+// filter[where][price][gt]:200
+// //filter[where][name][like]:cake
+// filter[fields][price]:true
+// filter[fields][name]:true
+// filter[fields][categoryId]:true
+// filter[limit]:1
+// filter[offset]:1
